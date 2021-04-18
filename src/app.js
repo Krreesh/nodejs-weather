@@ -63,6 +63,7 @@ app.get('/weather', (req, res) => {
                 placename,
                 address: location2,
                 temperature: forecastData.temperature,
+                humidity: forecastData.humidity,
                 observationTime: forecastData.observationTime,
                 latitude: latitude,
                 longitude: longitude

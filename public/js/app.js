@@ -22,8 +22,8 @@ weatherform.addEventListener('submit', (e) => {
                 messageOne.textContent = 'Error finding location ' + data.error                                
             } else {
                 messageOne.textContent = 'Place -' + data.placename 
-                messageTwo.textContent = 'Temperature: ' + data.temperature + ' observed at ' + data.observationTime
-                console.log('Place -' + data.placename + 'Temperature: ' + data.temperature + 'observed at ' + data.observationTime)    
+                messageTwo.textContent = 'Temperature: ' + data.temperature + ' observed at ' + data.observationTime + '. Humidity is ' + data.humidity
+                console.log('Place -' + data.placename + 'Temperature: ' + data.temperature + 'observed at ' + data.observationTime + '. Humidity is ' + data.humidity)    
             }
         })
     })

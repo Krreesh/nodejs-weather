@@ -12,7 +12,8 @@ const forecast = (city, callback) => {
             callback(undefined, {
                 location: body.location.name,
                 temperature: body.current.temperature,
-                observationTime: body.current.observation_time
+                observationTime: body.current.observation_time,
+                humidity: body.current.humidity
             }         
             )}
     })
