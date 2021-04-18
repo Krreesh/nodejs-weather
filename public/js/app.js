@@ -23,8 +23,7 @@ weatherform.addEventListener('submit', (e) => {
             } else {
                 messageOne.textContent = 'Place -' + data.placename 
                 messageTwo.textContent = 'Temperature: ' + data.temperature + ' observed at ' + data.observationTime
-                console.log('Place -' + data.placename + 'Temperature: ' + data.temperature + 'observed at ' + data.observationTime)
-    
+                console.log('Place -' + data.placename + 'Temperature: ' + data.temperature + 'observed at ' + data.observationTime)    
             }
         })
     })
